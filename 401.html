@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Mar 24 2020 18:17:22 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="5e7674ce1a5b6b2421a46dbf" data-wf-site="5e30eecf2c9656b33936eb65">
+<!--  Last Published: Tue Mar 24 2020 18:31:58 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5e7a4efafe669f33c7505a6a" data-wf-site="5e30eecf2c9656b33936eb65">
 <head>
   <meta charset="utf-8">
-  <title>404 Not Found - BC Youth Council</title>
-  <meta content="404 Not Found - BC Youth Council" property="og:title">
+  <title>Protected page</title>
+  <meta content="Protected page" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -20,9 +20,21 @@
 </head>
 <body>
   <div class="utility-page-wrap">
-    <div class="utility-page-content w-form"><img src="https://d3e54v103j8qbb.cloudfront.net/static/page-not-found.211a85e40c.svg" alt="page not found icon">
-      <h2 class="_404">Page Not Found</h2>
-      <div>The page you are looking for doesn&#x27;t exist or has been moved.</div>
+    <div class="utility-page-content w-password-page w-form">
+      <form action="/.wf_auth" method="post" class="utility-page-form w-password-page"><img src="https://d3e54v103j8qbb.cloudfront.net/static/password-page-lock.832ca8e2c9.svg" alt="lock icon">
+        <h2>Protected Page</h2><input type="password" autofocus="true" maxlength="256" name="pass" placeholder="Enter your password" class="w-password-page w-input"><input type="submit" value="Submit" data-wait="Please wait..." class="w-password-page w-button">
+        <div class="w-password-page w-form-fail">
+          <div>Incorrect password. Please try again.</div>
+        </div>
+        <div style="display:none" class="w-password-page w-embed w-script"><input type="hidden" name="path" value="<%WF_FORM_VALUE_PATH%>"><input type="hidden" name="page" value="<%WF_FORM_VALUE_PAGE%>"></div>
+        <div style="display:none" class="w-password-page w-embed w-script">
+          <script type="application/javascript">(function _handlePasswordPageOnload() {
+	  if (/[?&]e=1(&|$)/.test(document.location.search)) {
+	    document.querySelector('.w-password-page.w-form-fail').style.display = 'block';
+	  }
+	})()</script>
+        </div>
+      </form>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e30eecf2c9656b33936eb65" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
