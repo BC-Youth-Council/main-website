@@ -11,5 +11,5 @@ jobs:
       with:
           directory: "./"
           # The directory to scan
-          arguments: --check-favicon --check-img-http --enforce-https --disable-external
+          arguments: --check-favicon --check-img-http --enforce-https --disable-external --url-ignore facebook.com
           # The arguments to pass to HTMLProofer
