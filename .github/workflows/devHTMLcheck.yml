@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+    - development
+    paths-ignore:
+    - '.github/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: HTML Code Check
+      uses: chabad360/htmlproofer@master
+      with:
+          directory: "./"
+          # The directory to scan
+          arguments: --check-favicon --check-img-http --enforce-https 
+          # The arguments to pass to HTMLProofer
