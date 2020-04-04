@@ -6,6 +6,18 @@ on:
     - '.github/**'
 
 jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Audit live URL
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        url: 'https://pedantic-brahmagupta-25f079.netlify.com/'
+    - name: Upload results as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
   deploy:
     runs-on: ubuntu-latest
     steps:
