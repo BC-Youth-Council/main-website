@@ -17,6 +17,9 @@ jobs:
           # The directory to scan
           arguments: --check-favicon --check-img-http --enforce-https --disable-external --alt-ignore https://www.facebook.com/tr?id=154907775729568&ev=PageView&noscript=1
           # The arguments to pass to HTMLProofer
+            
+    - name: Minify CSS & JS
+      uses: nizarmah/auto-minify@v1.4
 
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
