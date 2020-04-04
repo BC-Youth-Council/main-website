@@ -2,6 +2,13 @@ on:
   pull_request:
 
 jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Audit Netlify deploy preview
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        netlify_site: 'pedantic-brahmagupta-25f079.netlify.com/'
   deploy:
     runs-on: ubuntu-latest
     steps:
