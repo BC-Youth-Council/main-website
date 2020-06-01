@@ -5,13 +5,6 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-    - name: Audit Netlify deploy preview
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        netlify_site: 'pedantic-brahmagupta-25f079.netlify.app/'
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
     - uses: actions/checkout@master
     - name: HTML Code Check
       uses: chabad360/htmlproofer@master
