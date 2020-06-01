@@ -1345,7 +1345,7 @@ a {
   right: 0%;
   bottom: auto;
   z-index: 1000;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #2f00ff;
   color: #6e2ed8;
 }
@@ -1389,6 +1389,10 @@ a {
   color: #fff;
   font-size: 50px;
   cursor: pointer;
+}
+
+.link-2 {
+  color: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -1625,6 +1629,9 @@ a {
   .signupbutton {
     margin-top: 10px;
     margin-left: 0px;
+  }
+  .message {
+    text-align: center;
   }
 }
 
