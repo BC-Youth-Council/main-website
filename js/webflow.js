@@ -8384,7 +8384,6 @@ exports.EventLimitAffectedElements = EventLimitAffectedElements;
 var QuickEffectIds = {
   FADE_EFFECT: 'FADE_EFFECT',
   SLIDE_EFFECT: 'SLIDE_EFFECT',
-  BLUR_EFFECT: 'BLUR_EFFECT',
   GROW_EFFECT: 'GROW_EFFECT',
   SHRINK_EFFECT: 'SHRINK_EFFECT',
   SPIN_EFFECT: 'SPIN_EFFECT',
