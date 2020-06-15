@@ -1602,6 +1602,7 @@ a {
   .nav-link {
     margin-bottom: 0px;
     padding-top: 20px;
+    color: #fff;
   }
   .nav-link:hover {
     box-shadow: none;
@@ -1797,6 +1798,12 @@ a {
     padding-right: 5vw;
     padding-left: 5vw;
   }
+  .text-block {
+    color: #fff;
+  }
+  .icon {
+    background-color: #fff;
+  }
   .people-section-regions {
     height: 1000px;
   }
@@ -1911,6 +1918,7 @@ a {
   }
   .nav-link {
     margin-bottom: 0px;
+    color: #fff;
   }
   .hero-content {
     margin-bottom: 5vh;
@@ -1986,6 +1994,12 @@ a {
   }
   .hero-content-home {
     margin-bottom: 5vh;
+  }
+  .text-block {
+    color: #fff;
+  }
+  .icon {
+    background-color: #fff;
   }
   .hero-content-region {
     margin-bottom: 5vh;
@@ -2086,6 +2100,7 @@ a {
   .nav-link {
     margin-bottom: 0px;
     padding-bottom: 20px;
+    color: #fff;
   }
   .feature-wrap {
     -webkit-box-orient: vertical;
@@ -2197,6 +2212,13 @@ a {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+  }
+  .text-block {
+    background-color: transparent;
+    color: #fff;
+  }
+  .icon {
+    background-color: #fff;
   }
   .image-6 {
     margin-bottom: 0px;
