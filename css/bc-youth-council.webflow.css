@@ -1600,6 +1600,27 @@ a {
   border-bottom: 2px solid #000;
 }
 
+.campaign-people-enviro {
+  display: none;
+  width: 100%;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 34px;
@@ -2368,6 +2389,9 @@ a {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .campaign-people-enviro {
+    height: auto;
   }
 }
 
