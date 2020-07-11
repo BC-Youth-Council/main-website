@@ -625,7 +625,7 @@ a {
   display: flex;
   overflow: visible;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 10px;
   margin-left: 0px;
   float: none;
@@ -1354,6 +1354,7 @@ a {
   right: 0%;
   bottom: auto;
   z-index: 1000;
+  display: none;
   padding: 10px 20px;
   background-color: #c0e5ff;
   color: #6e2ed8;
@@ -1618,6 +1619,12 @@ a {
   align-items: center;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+}
+
+.text-block-2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 991px) {
