@@ -36,14 +36,3 @@ jobs:
       env:
         CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
         CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
-    
-    - name: Lighthouse audit website
-      uses: jakejarvis/lighthouse-action@master
-      with:
-        url: 'https://bcyouthcouncil.ca'
-  
-    - name: Upload Lighthouse results as artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: report
-        path: './report'
