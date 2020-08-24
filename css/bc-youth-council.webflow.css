@@ -643,6 +643,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #000;
   -o-object-fit: fill;
   object-fit: fill;
 }
