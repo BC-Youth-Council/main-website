@@ -13,7 +13,8 @@ jobs:
           # The directory to scan
           arguments: --check-favicon --check-img-http --enforce-https --disable-external --alt-ignore https://www.facebook.com/tr?id=154907775729568&ev=PageView&noscript=1
           # The arguments to pass to HTMLProofer
-    - name: Run linters
+  
+    - name: Lint CSS files
       uses: wearerequired/lint-action@v1
       with:
           github_token: ${{ secrets.github_token }}
