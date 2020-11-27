@@ -27,7 +27,7 @@ jobs:
           stylelint: true
             
     - name: Minify CSS & JS
-      uses: nizarmah/auto-minify@v1.4
+      uses: nizarmah/auto-minify@v2.0
 
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
