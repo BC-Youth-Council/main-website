@@ -10,24 +10,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: HTML Code Check
+    - name: Checkout repository
+      uses: actions/checkout@master
+
+    - name: Lint HTML files
       uses: chabad360/htmlproofer@master
       with:
           directory: "./"
           # The directory to scan
           arguments: --check-favicon --check-img-http --enforce-https --disable-external --alt-ignore https://www.facebook.com/tr?id=154907775729568&ev=PageView&noscript=1
           # The arguments to pass to HTMLProofer
-    
-    - name: Lint CSS files
-      uses: wearerequired/lint-action@v1
-      with:
-          github_token: ${{ secrets.github_token }}
-          # Enable your linters here
-          stylelint: true
-            
-    - name: Minify CSS & JS
-      uses: nizarmah/auto-minify@v2.0
 
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
