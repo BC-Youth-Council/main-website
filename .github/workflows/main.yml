@@ -13,14 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@master
 
-    - name: Lint HTML files
-      uses: chabad360/htmlproofer@master
-      with:
-          directory: "./"
-          # The directory to scan
-          arguments: --check-favicon --check-img-http --enforce-https --disable-external --alt-ignore https://www.facebook.com/tr?id=154907775729568&ev=PageView&noscript=1
-          # The arguments to pass to HTMLProofer
-
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
       with:
