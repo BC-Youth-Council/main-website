@@ -15,7 +15,7 @@ jobs:
           # The arguments to pass to HTMLProofer
   
     - name: Lint CSS files
-      uses: wearerequired/lint-action@v1
+      uses: wearerequired/lint-action@v1.9.0
       with:
           github_token: ${{ secrets.github_token }}
           # Enable your linters here
